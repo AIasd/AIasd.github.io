@@ -1,0 +1,247 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Ziyuan Zhong}{June 15, 1995}{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:zhongzi@reed.edu}{zhongzi\mbox{}@\mbox{}reed.edu}\sbull
+503-708-6063\sbull
+\href{https://www.linkedin.com/in/ziyuan-zhong-861b40ba}{https://www.linkedin.com/in/ziyuan-zhong-861b40ba}
+\\\sbull
+\href{https://github.com/AIasd}{https://github.com/AIasd}
+\\
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Education}
+
+\headedsection
+  {\href{http://www.reed.edu}{Reed College}}
+  {\textsc{Portland, Oregon}} {%
+  \headedsubsection
+    {Bachelor degree in Mathematics(Computer Science concentration)}
+    {2014 -- 2018}
+    {\bodytext{I am currently a junior at Reed College.\\}}
+}
+
+\spacedhrule{-0.2em}{-0.4em}
+
+  \roottitle{Experience}
+ \headedsection
+  {Reed College Software Design Studio} {%
+  \headedsubsection
+    {Intern}
+    {Feb, 2016 -- Now}
+    {\bodytext{Build softwares in a team to both our own improve coding skills and serve Reed community.\\}}}
+   
+ \headedsection
+  {Reed College Math Department} {%
+  \headedsubsection
+    {Math and Computer Science Tutor}
+    {Sep, 2015 -- Now}
+    {\bodytext{Tutor sutdents for Math111(Single Variable Calculus), Math112(Intro to Analysis) and Math121(Computer Fundamentals I)\\}}}
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Research Related Experience}
+  \headedsubsection
+    {Differential Privacy Group}
+    {Sep, 2016 -- Now}
+    {\bodytext{Read paper in differential privacy and discuss with professor and other fellow students. Advised by professor Adam Groce.\\}}
+
+   \headedsubsection
+    {GPU Parallel Computing Group}
+    {Sep, 2016 -- Now}
+    {\bodytext{Read paper in parallel computing and implement some fundamental parallel algorithms like prefix sum, radix sort and suffix array construction using cuda. Advised by professor Jim Fix.\\}}
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Honor and Award}
+   \headedsubsection
+    {Commendation-Admin}
+    {May,2016 and May,2015}
+    {\bodytext{At the end of my freshman year and sophmore year, I was commended twice by Reed College for academic achievement.\\}}
+        
+     \headedsubsection
+    {ACM-International Collegiate Programming Contest
+-Pacific NW Regional Div1, 28th place}
+    {Nov, 2016}
+    {\bodytext{We competed in Division1 this year with the name AlgoGriffins1. We took the second place out of 10 teams in Northwest Site Div1 at George Fox University and ranked 28th among 77 teams in the whole Pacific-NW regional Div1. Final score board for our local site at : \href{http://acmicpc-pacnw.org/scoreboard/group3.html}{http://acmicpc-pacnw.org/scoreboard/group3.html}\\}}
+  
+    \headedsubsection
+    {ACM-International Collegiate Programming Contest
+-Pacific NW Regional Div2, 7th place}
+   {Nov, 2015}
+    {\bodytext{I and two other Reed students formed a team named AlgoGriffins and competed in Division2. We took the second place out of 19 teams in Northwest Site Div2 at George Fox University and ranked 7th among 75 teams in the whole Pacific-NW regional Div2. Final score board for our local site at : \href{http://www.acmicpc-pacnw.org/ProblemSet/2015/group9.html}{http://www.acmicpc-pacnw.org/ProblemSet/2015/group9.html}\\}}
+    
+    \spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Programming Skills}
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Proficient:}
+  {Python, C/C++}
+  \vspace{0.5em}
+  \inlineheadsection
+  {Familiar:}
+  {R, Javascript, HTML/CSS, Latex}
+  \vspace{0.5em}
+  \inlineheadsection
+  {Experience:}
+  {Mathematic, Matlab, SML of NJ\\}
+  
+  \spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Project}
+
+\headedsection
+  {Lemur(A data collector)}
+  {\textsc{Reed College Software Design Studio}} {%
+  \headedsubsection
+    {}
+    {May,16 - now}
+    {\bodytext{I build a data collector for biology department at Reed College with two fellow students. The app is a functional open-source web application built using Flask(python web-framework), JS, HTML/CSS and PostgreSQL. The app now is deployed on Reed College's server and used by biology department in their intro-level class for lab data collecton. The app is currently maintained by me.\\ 
+Github repo at: \href{https://github.com/reed-college/lemur}{github.com/reed-college/lemur}}}
+}
+
+\spacedhrule{0.5em}{-0.4em}
+
+  
+ \roottitle{Related Course list}
+   \inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {MATH 111 Single Variable Calculus}
+  {Calculus of a single variable by Larson, Hostetler, and Edwards, 8th ed.}
+  \vspace{0.5em}
+
+  \inlineheadsection
+  {MATH 112 Introduction to Analysis}
+  {\href{http://people.reed.edu/~iswanson/analysis.pdf}{Irena Swanson's notes}}
+  \vspace{0.5em}
+  
+  \inlineheadsection
+  {Math 211 and 212 Multivariable Calculus}
+  {\href{http://people.reed.edu/~davidp/homepage/211.pdf}{David Perkinson's notes} and Vector Calculus, 4th ed., by Susan Colley}
+  \vspace{0.5em}
+  
+   \inlineheadsection
+  {Math 256 Applied Differential Equations}
+  {Differential Equations, 4th ed., Blanchard, Devaney, Hall}
+  \vspace{0.5em}
+  
+  \inlineheadsection
+  {MATH 331 Linear Algebra}
+  {	Linear algebra by Stephen H. Friedberg; Arnold J. Insel; Lawrence E. Spence, 4th ed.}
+  \vspace{0.5em}
+  
+  
+   \inlineheadsection
+  {MATH 121 Computer Fundamentals I}
+  {\href{http://www.composingprograms.com/}{Composing Programs}}
+  \vspace{0.5em}
+  
+   \inlineheadsection
+  {MATH 221 Computer Fundamentals II}
+  {\href{https://jimfix.github.io/math221/index.html}{Jim Fix's notes}}
+  \vspace{0.5em}
+  
+   \inlineheadsection
+  {MATH 382 Algorithms and Data Structures}
+  {Introduction to Algorithms by Cormen, Leiserson, Rivest and Stein, 3rd ed.}
+  \vspace{0.5em}
+  
+   \inlineheadsection
+  {MATH 387 Computability and Complexity}
+  {Introduction to the Theory of Computation by Michael Sipser, 2nd ed.}
+  \vspace{0.5em}
+  
+   \inlineheadsection
+  {MATH 442 Topic in Computer System}
+  {}
+  \vspace{0.5em}
+    
+  
+   \inlineheadsection
+  {MATH 391 Probability}
+  {Probability with Applications and R (2014), by Robert P. Dobrow.}
+  \vspace{0.5em}
+  
+   \inlineheadsection
+  {MATH392 Mathematical Statistics}
+  {Albyn Jones's notes}
+  \vspace{0.5em}
+  
+  
+   \roottitle{Related Online Course list}
+   
+   \inlineheadsection
+  {\href{https://www.coursera.org/learn/machine-learning}Coursera Machine Learning}
+  {Online Courseware and Andrew Ng's notes}
+  \vspace{0.5em}
+  
+   \inlineheadsection
+  {\href{https://www.udacity.com/course/intro-to-machine-learning--ud120}Udacity Machine Learning}
+  {Online Courseware}
+  \vspace{0.5em}
+
+
+  \spacedhrule{0.5em}{-0.4em}
+
+ \roottitle{Other Experience}
+ \headedsection
+  {Reed College International Student Services} {%
+  \headedsubsection
+    {Interconnect Mentor}
+    {Aug, 2016 -- Dec, 2016}
+    {\bodytext{Help new-incoming international students to be familiar with school/local culture. Organize monthly group events to help them adapt into local environment and socialize with peers. One-on-one mentoring for addressing specific concerns/problems.}}}
+  
+   \headedsection
+  {Reed College Math Department} {%
+  \headedsubsection
+    {Math Grader}
+    {Sep, 2015 -- Jan, 2016}
+    {\bodytext{Grade homework for MATH111(Single Variable Calculus).\\}}}
+
+   \headedsection
+  {Reed College Library} {%
+  \headedsubsection
+    {System Assistant}
+    {Sep, 2015 -- Jan, 2016}
+    {\bodytext{Clean up system files; Write python scripts to librarians to clean up files automatically.\\}}}
+
+\end{document}
+
